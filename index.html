@@ -34,9 +34,11 @@
         localStorage.setItem("Rizwan", newHuman);
         console.log(newHuman);
 
+        // JSON.stringyfy function coverts object/array to string
+        // JSON.perse function converts string to object/array           
         let newRizwan = localStorage.getItem("Rizwan");
         let updatedRizwan = JSON.parse(newRizwan);
-        console.log(newRizwan);
+        console.log(updatedRizwan);
     </script>
 </body>
 </html>
