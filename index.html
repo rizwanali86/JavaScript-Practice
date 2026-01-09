@@ -24,6 +24,19 @@
         console.log(myAge);
         console.log(myEducation);
         console.log(myCar);
+
+        let human = {
+            name: "Rizwan",
+            age: 23,
+        };
+
+        let newHuman = JSON.stringify(human);
+        localStorage.setItem("Rizwan", newHuman);
+        console.log(newHuman);
+
+        let newRizwan = localStorage.getItem("Rizwan");
+        let updatedRizwan = JSON.parse(newRizwan);
+        console.log(newRizwan);
     </script>
 </body>
 </html>
